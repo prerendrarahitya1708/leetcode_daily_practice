@@ -1,0 +1,14 @@
+bool isPalindrome(int x) {
+    int m=x;
+    double re=0,res=0;
+      while(x>0)
+      {
+        re=x%10;
+     res=res*10+re;
+    x=x/10;
+      }
+    if(m==res)
+    return true;
+    else
+    return false;
+}
